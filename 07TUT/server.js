@@ -3,10 +3,16 @@ const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3500;
 
-// "^" the carrot symbol is saying if it starts with a "/" and "$" is saying is must end with the "/" or "|"(represents or) end with "/index.html"
+// built in middleware to handle urlencoded data aka form data: constentType: application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: false }));
+
+// built in middkesware for json
+app.use(express.json());
+
+// serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
 app.get("^/$|/index(.html)?", (req, res) => {
-  // "sendFile" is one way to send aka serve a file
-  // res.sendFile("./views/index.html", { root: __dirname });
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
