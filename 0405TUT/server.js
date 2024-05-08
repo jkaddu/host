@@ -5,16 +5,31 @@ const fsPromises = require("node:fs/promises");
 const logEvents = require("./logEvents");
 const EventEmitter = require("events");
 class Emitter extends EventEmitter {}
+// initialize object
+const myEmitter = new Emitter();
+// add listener for event
+myEmitter.on("log", (msg, filename) => logEvents(msg, filename));
 
 const PORT = process.env.PORT || 3500;
 
 const serveFile = async (filePath, contentType, response) => {
   try {
-    const data = fsPromises.readFile(filePath, "utf8");
-    response.writeHead(200, { "Content-Type": contentType });
-    response.end();
+    const rawData = await fsPromises.readFile(
+      filePath,
+      !contentType.includes("image") ? "utf8" : ""
+    );
+    const data =
+      contentType === "application/json" ? JSON.parse(rawData) : rawData;
+
+    response.writeHead(filePath.includes("404.html") ? 404 : 200, {
+      "Content-Type": contentType,
+    });
+    response.end(
+      contentType === "application/json" ? JSON.stringify(data) : data
+    );
   } catch (err) {
     console.log(err);
+    myEmitter.emit("log", `${err.namel}\t${err.message}\t`, "errLog.txt");
     response.statusCode = 500;
     response.end();
   }
@@ -22,7 +37,7 @@ const serveFile = async (filePath, contentType, response) => {
 
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method);
-  console.log(path.join(__dirname, "views", req.url, "index.html"));
+  myEmitter.emit("log", `${req.url}\t${req.method}\t`, "reqLog.txt");
 
   const extension = path.extname(req.url);
 
@@ -39,7 +54,7 @@ const server = http.createServer((req, res) => {
       contentType = "application/json";
       break;
     case "jpg":
-      contentType = "imgage/jpeg";
+      contentType = "image/jpeg";
       break;
     case ".png":
       contentType = "image/png";
@@ -60,7 +75,7 @@ const server = http.createServer((req, res) => {
       ? path.join(__dirname, "views", req.url)
       : path.join(__dirname, req.url);
 
-  // If statement that if there is not html extension to the filePath it adds it
+  // "if" statement that says if there is not an extension to the filePath it adds "html" to it
   if (!extension && req.url.slice(-1) !== "/") filePath += ".html";
 
   const fileExist = fs.existsSync(filePath);
@@ -68,6 +83,7 @@ const server = http.createServer((req, res) => {
   if (fileExist) {
     serveFile(filePath, contentType, res);
   } else {
+    console.log(path.parse(filePath).base);
     // could be 404 or 301 aka redirect
     switch (path.parse(filePath).base) {
       case "old-page.html":
@@ -83,13 +99,4 @@ const server = http.createServer((req, res) => {
     }
   }
 });
-
-// initialize object
-const myEmitter = new Emitter();
-
-// add listener for event
-// myEmitter.on("log", (msg) => logEvents(msg));
-
-//   myEmitter.emit("log", "Log event emitted!");
-
 server.listen(PORT, () => console.log(`Server running on ${PORT}`));
