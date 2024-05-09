@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3500;
 // Custom middleware logger
 app.use(logger);
 // Crsoo Orgin Resource Sharing
-const whitelist = [
+const mylist = [
   "https://www.google.com",
   "http://127.0.0.1:5500",
   "http://localhost:3500",
@@ -17,8 +17,8 @@ const whitelist = [
 
 const corsOptions = {
   origin: (origin, callback) => {
-    // this statement is saying if the domain is the
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
+    // this statement is saying if the domain is in my list show it in the browser
+    if (mylist.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by cors"));
@@ -54,7 +54,7 @@ app.get("/old-page(.html)?", (req, res) => {
 app.get(
   "/hey(.html)?",
   (req, res, next) => {
-    console.log("Attempted to load hello.html");
+    console.log("Attempted to load hey.html");
     next();
   },
   (req, res) => {
@@ -80,6 +80,7 @@ const three = (req, res, next) => {
 
 app.get("/chain(.html)?", [one, two, three]);
 
+//
 app.all("*", (req, res) => {
   res.status(404);
   if (req.accepts("html")) {
@@ -90,7 +91,7 @@ app.all("*", (req, res) => {
     res.type("txt").send("Not Found");
   }
 });
-
+// Error handling middleware
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
