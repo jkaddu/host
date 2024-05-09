@@ -1,0 +1,21 @@
+{
+  "name": "08tut",
+  "version": "1.0.0",
+  "main": "server.js",
+  "description": "Routing Tutorial",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon"
+  },
+  "author": "Joshua Kaddu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
