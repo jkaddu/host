@@ -1,26 +1,25 @@
-20240507	21:11:23	dce21f55-e620-482b-b640-fbe973c05a5c	/	GET	
-20240507	21:13:37	ea5af8ad-cb26-42dd-96f1-cc7b68fb7828	/	GET	
-20240507	21:13:37	66d3b81f-7e52-4bed-a384-7a6f8d7cc923	/css/style.css	GET	
-20240507	21:13:42	23e1c504-7c25-421b-9b23-464ca73304a2	/	GET	
-20240507	21:13:42	2d5ab3c4-b951-45fc-beb2-b18bac2283c8	/css/style.css	GET	
-20240507	21:13:48	a5bc1d31-313b-4835-bb84-c61c938163af	/old	GET	
-20240507	21:13:49	cb66ea98-4500-48ee-a975-2f4255e81678	/old	GET	
-20240507	21:13:49	92f06252-8e3e-4b08-9ee1-e861fdbfdee0	/css/style.css	GET	
-20240507	21:13:54	a3528391-e57b-4c0e-bf7c-3fc6d050028f	/new-page	GET	
-20240507	21:13:54	addf53d8-417f-49a3-9c10-3b40bf210ac8	/css/style.css	GET	
-20240507	21:13:54	89255c15-aad7-4f2d-a84f-f1cab99324f1	/img/img1.jpg	GET	
-20240507	21:13:58	4d93a3a8-d5ba-41a7-9cae-0346088bda38	/new-page	GET	
-20240507	21:13:58	d79a4f1e-43b6-42b5-9253-89df14a86657	/css/style.css	GET	
-20240507	21:13:58	42b7d759-2ad2-4b7e-a9d5-e930a2bc58b0	/img/img1.jpg	GET	
-20240507	21:15:28	a155d217-cf41-4003-9669-baaeb725fdee	/css/style.css	GET	
-20240507	21:16:07	eab37df9-a7bb-4465-9a0f-205bfe20303d	/new-page	GET	
-20240507	21:16:08	cf49aa5f-9bdd-4b9a-9336-9279ce222f87	/css/style.css	GET	
-20240507	21:16:08	2ac7ee3a-7b82-4505-bb49-87acd274ed23	/img/img1.jpg	GET	
-20240507	21:20:03	d34c28ff-09bd-4432-803c-f6602a732d4a	/new-page	GET	
-20240507	21:20:03	c8857c6c-ca6c-4df0-9df4-3136fbd2e8bc	/css/style.css	GET	
-20240507	21:20:03	dda415f7-a8be-4157-a912-5b91cbee8917	/img/img1.jpg	GET	
-20240507	21:36:53	523d6837-7bfc-4f40-8cc6-11a3f3830ee5	/new-page	GET	
-20240507	22:12:06	cacf62ec-5630-4588-b3c9-1c3c99f9140b	/new-page	GET	
-20240507	22:12:27	6fab1fdb-11fd-4323-9354-b35b447a59da	/new-page	GET	
-20240507	22:12:27	fd08cf5a-7a69-4095-85a7-e7b107ba7b25	/css/style.css	GET	
-20240507	22:12:27	142c4b03-ac9e-49d1-90f7-28c8fdec6381	/img/img1.jpg	GET	
+20240508	11:48:45	0b513607-d8e2-485d-b7f6-76f2d7fe961e	GET	undefined	/new-page
+20240508	11:48:45	2da7a832-1fd5-4944-9817-0f5b270b3c48	GET	undefined	/css/style.css
+20240508	11:48:45	f19ed81e-0c79-42fc-bcd6-b3a795251ae4	GET	undefined	/img/stadium.jpg
+20240508	11:54:10	cff6f038-3499-481e-9728-2ebc3f9eb9f6	GET	undefined	/new-page
+20240508	11:54:10	2e59938b-a47e-478a-8eb3-bad5caa8ff60	GET	undefined	/css/style.css
+20240508	11:54:10	8c074249-c3fd-4e1f-8e18-ed42e854d47e	GET	undefined	/img/stadium.jpg
+20240508	11:54:15	b1415512-b2b7-4e42-95b7-3a50e06ce7a3	GET	undefined	/new-page
+20240508	11:54:15	a0e92f7c-9a6e-4d7d-aced-e94c93627cc4	GET	undefined	/css/style.css
+20240508	11:54:15	6017b9d6-a4ad-40fb-92fd-4c61c0d73ce7	GET	undefined	/img/stadium.jpg
+20240508	11:59:44	51e2ca12-c05c-49c3-8bdb-5b322bcb3705	OPTIONS	https://www.google.com	/
+20240508	11:59:44	d598f16a-dcdb-436f-a102-6bb193d6820f	GET	https://www.google.com	/
+20240508	12:13:07	94b17701-45f5-42ae-b9bc-9a0854a2b42f	OPTIONS	https://www.google.com	/
+20240508	12:13:07	d9c57a55-1ac0-4d66-afd6-d175e54d82d5	GET	https://www.google.com	/
+20240508	12:13:37	5f9362a7-5ead-4d95-bb23-d116ae439169	OPTIONS	https://www.google.com	/
+20240508	12:13:37	e509be43-7158-4779-95f7-e2fbd0d501df	GET	https://www.google.com	/
+20240508	21:48:26	62c47374-9b59-4ac2-b5f7-9d35e27dc609	GET	undefined	/new-page
+20240508	21:49:23	c1482156-18db-409f-9d5a-ac13cb2237bf	GET	undefined	/new-page
+20240508	21:49:23	f04d5b0d-33ef-4e2b-a347-ea239139a765	GET	undefined	/css/style.css
+20240508	21:49:23	6722530e-7e06-4e74-875c-0c8f85eab1a2	GET	undefined	/img/stadium.jpg
+20240508	22:02:27	49bb2fc3-036a-4c30-bacb-8e1a469b576d	GET	undefined	/new-page
+20240508	22:03:11	aa634485-8d96-4342-ad6e-c406fc9b7e41	GET	undefined	/new-page
+20240508	22:03:12	ea95b9d3-a2fd-4d0b-a1df-4d93999159ff	GET	undefined	/css/style.css
+20240508	22:03:12	e384264d-387f-43bb-9295-b3d6d76599e2	GET	undefined	/img/stadium.jpg
+20240508	22:13:10	376dbca9-8373-485d-ab16-68ee22d3aa5b	GET	undefined	/new-
+20240508	22:13:10	bdd280c6-3cc9-456a-8e46-e0ef909df129	GET	undefined	/css/style.css

@@ -1,3 +1,1 @@
-20240507	21:11:23	f564448d-8417-4007-8a24-6d559d350d44	undefined	The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Promise	
-20240507	21:36:53	39d049fe-a3e5-448c-b83a-c9b520c627f2	undefined	The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Promise	
-20240507	22:12:06	86b5220a-79c1-405c-8b09-2f0bf4e972ae	undefined	The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Promise	
+20240508	22:02:27	87834cff-5333-4cd3-9898-2cc22ff91ff9	Error: Not allowed by cors
