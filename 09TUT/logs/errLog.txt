@@ -1,0 +1,4 @@
+20240508	22:02:27	87834cff-5333-4cd3-9898-2cc22ff91ff9	Error: Not allowed by cors
+20240509	10:30:00	b4e672be-de0c-432a-b4ff-bd5d4c48a800	Error: ENOENT: no such file or directory, stat '/Users/joshuakaddu/Desktop/PROJECTS/hostess/08TUT/routes/views/subdir/test.html'
+20240509	10:31:45	b5a66c7b-eeb2-411f-8efa-556f67dea16f	Error: ENOENT: no such file or directory, stat '/Users/joshuakaddu/Desktop/PROJECTS/hostess/08TUT/routes/views/subdir/test.html'
+20240509	10:33:33	a6133676-2021-4447-bfca-96006f0cede0	Error: ENOENT: no such file or directory, stat '/Users/joshuakaddu/Desktop/PROJECTS/hostess/08TUT/routes/views/subdir/index.html'
