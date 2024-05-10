@@ -34,53 +34,14 @@ app.use(express.urlencoded({ extended: false }));
 // built in middkesware for json
 app.use(express.json());
 
-// serve static files
-app.use(express.static(path.join(__dirname, "/public")));
+// serve static files/applies the css,image or images and text
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
+// ROUTES
+app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
-
-app.get("^/$|/index(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
-
-app.get("/new-page(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "new-page.html"));
-});
-
-app.get("/old-page(.html)?", (req, res) => {
-  // default statusCode is 302 for the redirect method
-  res.redirect(301, "/new-page.html");
-});
-
-// Route Handlers
-app.get(
-  "/hey(.html)?",
-  (req, res, next) => {
-    console.log("Attempted to load hey.html");
-    next();
-  },
-  (req, res) => {
-    res.send("Hey World");
-  }
-);
-
-// Chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-
-const three = (req, res, next) => {
-  console.log("three");
-  res.send("Finished");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
+app.use("/employees", require("./routes/api/employees"));
 
 //
 app.all("*", (req, res) => {
