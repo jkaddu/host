@@ -10,9 +10,10 @@ const PORT = process.env.PORT || 3500;
 // Custom middleware logger
 app.use(logger);
 
+// Cross Origin Resource Sharing
 app.use(cors(corsOptions));
 
-// built in middleware to handle urlencoded data aka form data: constentType: application/x-www-form-urlencoded
+// built in middleware to handle urlencoded data aka form data
 app.use(express.urlencoded({ extended: false }));
 
 // built in middkesware for json
@@ -20,14 +21,12 @@ app.use(express.json());
 
 // serve static files aka applies the css,image or images and text
 app.use("/", express.static(path.join(__dirname, "/public")));
-app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 // ROUTES
 app.use("/", require("./routes/root"));
-app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
 
-//
+// Catch all for all for pages that don't exist
 app.all("*", (req, res) => {
   res.status(404);
   if (req.accepts("html")) {
