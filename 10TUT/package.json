@@ -1,7 +1,7 @@
 {
   "name": "10tut",
   "version": "1.0.0",
-  "description": "\"Authentication Tutorial\"",
+  "description": "Authentication Tutorial",
   "main": "server.js",
   "author": "Joshua Kaddu",
   "license": "ISC",
