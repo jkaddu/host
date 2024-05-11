@@ -24,6 +24,7 @@ app.use("/", express.static(path.join(__dirname, "/public")));
 
 // ROUTES
 app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
 app.use("/employees", require("./routes/api/employees"));
 
 // Catch all for all for pages that don't exist
@@ -37,7 +38,7 @@ app.all("*", (req, res) => {
     res.type("txt").send("Not Found");
   }
 });
-// Error handling custom middleware
+// Error handling custommiddleware
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
