@@ -1,7 +1,7 @@
 {
   "name": "09tut",
   "version": "1.0.0",
-  "description": "\"MVC Rest API Tutorial\"",
+  "description": "MVC Rest API Tutorial",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
