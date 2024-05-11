@@ -37,7 +37,7 @@ app.all("*", (req, res) => {
     res.type("txt").send("Not Found");
   }
 });
-// Error handling middleware
+// Error handling custom middleware
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
