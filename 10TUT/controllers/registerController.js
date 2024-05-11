@@ -16,7 +16,7 @@ const handleNewUser = async (req, res) => {
       .status(400)
       .json({ message: "Username and password are required." });
   // checks for duplicate usernames in the database(DB)
-  const duplicate = usersDB.users.find((person) => person.usename === user);
+  const duplicate = usersDB.users.find((person) => person.username === user);
   if (duplicate) return res.sendStatus(409); // 409 is a conflict status code
   try {
     // encrpyt the password

@@ -5,7 +5,7 @@ const usersDB = {
   },
 };
 
-const bcrpyt = require("bcrpyt");
+const bcrypt = require("bcrypt");
 
 const handleLogin = async (req, res) => {
   const { user, pwd } = req.body;
@@ -16,8 +16,9 @@ const handleLogin = async (req, res) => {
   const foundUser = usersDB.users.find((person) => person.username === user);
   if (!foundUser) return res.sendStatus(401); // status code of unauthorized
   // evaluate passowrd
-  const match = await bcrpyt.compare(pwd, foundUser.password);
+  const match = await bcrypt.compare(pwd, foundUser.password);
   if (match) {
+    // create JWTs
     res.json({ success: `User ${user} is logged in!` });
   } else {
     res.sendStatus(401);
