@@ -158,3 +158,7 @@
 20240511	20:17:04	9c1951b6-733e-4f9f-8761-1cfacab1f205	POST	undefined	/auth
 20240511	20:17:09	90c9924b-f4d2-4377-933c-73c8b4ddcfed	GET	undefined	/refresh
 20240511	20:17:35	52ae1a50-9b6a-418f-a9f7-996bba94959f	GET	undefined	/refresh
+20240512	09:19:18	5e814bbd-eb22-44ae-ad76-bb3bdb78f278	GET	undefined	/logout
+20240512	09:19:49	c13a3e0b-d013-41fa-9d74-8ee465ea3d9b	POST	undefined	/auth
+20240512	09:20:08	c52b2b0a-7cba-49cf-88b9-2df4060fe85b	GET	undefined	/logout
+20240512	09:21:35	ccb6b442-a9fc-47e5-b8b3-9840db05c890	GET	undefined	/refresh
