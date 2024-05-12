@@ -29,7 +29,7 @@ const serveFile = async (filePath, contentType, response) => {
     );
   } catch (err) {
     console.log(err);
-    myEmitter.emit("log", `${err.namel}\t${err.message}\t`, "errLog.txt");
+    myEmitter.emit("log", `${err.namel}: ${err.message}`, "errLog.txt");
     response.statusCode = 500;
     response.end();
   }
