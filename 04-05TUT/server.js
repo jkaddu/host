@@ -75,7 +75,7 @@ const server = http.createServer((req, res) => {
       ? path.join(__dirname, "views", req.url)
       : path.join(__dirname, req.url);
 
-  // "if" statement that says if there is not an extension to the filePath it adds "html" to it
+  // "if" statement says if there is not an extension to the filePath add "html" to it
   if (!extension && req.url.slice(-1) !== "/") filePath += ".html";
 
   const fileExist = fs.existsSync(filePath);
