@@ -50,7 +50,7 @@ const handleLogin = async (req, res) => {
       path.join(__dirname, "..", "model", "users.json"),
       JSON.stringify(usersDB.users)
     );
-    // Sends cookie that accepts httpOnly and last for a day aka 24 hours
+    // Sends cookie that accepts httpOnly and last for a day aka maxAge
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       maxAge: 24 * 60 * 60 * 1000,
