@@ -6,6 +6,7 @@ const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
 const verifyJWT = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
 
 const PORT = process.env.PORT || 3500;
 
@@ -20,6 +21,9 @@ app.use(express.urlencoded({ extended: false }));
 
 // built in middkesware for json
 app.use(express.json());
+
+// custom middlemare for cookies
+app.use(cookieParser());
 
 // serve static files aka applies the css,image or images and text
 app.use("/", express.static(path.join(__dirname, "/public")));
