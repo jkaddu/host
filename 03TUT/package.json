@@ -1,7 +1,7 @@
 {
   "name": "03tut",
   "version": "1.0.0",
-  "description": "",
+  "description": "Event Emitter Tutorial",
   "main": "index.js",
   "scripts": {
     "start": "node index",

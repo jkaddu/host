@@ -53,6 +53,8 @@ const handleLogin = async (req, res) => {
     // Sends cookie that accepts httpOnly and last for a day aka maxAge
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
+      sameSite: "None",
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000,
     });
     res.json({ accessToken });
