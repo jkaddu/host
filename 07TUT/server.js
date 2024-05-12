@@ -19,6 +19,7 @@ const corsOptions = {
   origin: (origin, callback) => {
     // this statement is saying if the domain is in myList show it in the browser
     if (mylist.indexOf(origin) !== -1 || !origin) {
+      // the first parameter of the callback is saying there is no error and the second parameter is saying that it'll send the origin aka domain name back
       callback(null, true);
     } else {
       callback(new Error("Not allowed by cors"));
