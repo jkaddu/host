@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 // built in middkesware for json
 app.use(express.json());
 
-// custom middlemare for cookies
+// 3rd party middlemare for cookies
 app.use(cookieParser());
 
 // serve static files aka applies the css,image or images and text
