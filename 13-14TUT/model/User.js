@@ -6,7 +6,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  role: {
+  roles: {
     User: {
       type: Number,
       default: 2001,
