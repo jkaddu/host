@@ -1,0 +1,13 @@
+20240508	22:02:27	87834cff-5333-4cd3-9898-2cc22ff91ff9	Error: Not allowed by cors
+20240509	10:30:00	b4e672be-de0c-432a-b4ff-bd5d4c48a800	Error: ENOENT: no such file or directory, stat '/Users/joshuakaddu/Desktop/PROJECTS/hostess/08TUT/routes/views/subdir/test.html'
+20240509	10:31:45	b5a66c7b-eeb2-411f-8efa-556f67dea16f	Error: ENOENT: no such file or directory, stat '/Users/joshuakaddu/Desktop/PROJECTS/hostess/08TUT/routes/views/subdir/test.html'
+20240509	10:33:33	a6133676-2021-4447-bfca-96006f0cede0	Error: ENOENT: no such file or directory, stat '/Users/joshuakaddu/Desktop/PROJECTS/hostess/08TUT/routes/views/subdir/index.html'
+20240510	13:13:30	bc915fe4-768c-4100-b49b-07b0247e5c42	TypeError: Cannot read properties of undefined (reading 'firstname')
+20240510	13:16:05	21688dba-975f-4a56-b84c-09bf3ae51703	TypeError: Cannot read properties of undefined (reading 'firstname')
+20240510	13:21:25	8bbd0da6-a06b-402e-a8e3-d47aab42fb3e	SyntaxError: Unexpected token ',', ..."{
+  "id": ,
+  "first"... is not valid JSON
+20240510	13:23:39	ea8226fd-2bed-4dd8-a508-1b9a4cb07fea	TypeError: Cannot read properties of undefined (reading 'find')
+20240510	13:25:01	500e88a8-d29d-4012-bac8-e9787b64cd0f	TypeError: Cannot read properties of undefined (reading 'find')
+20240511	11:41:32	ab68becc-c18b-4148-8b4d-922a343036b9	SyntaxError: Expected property name or '}' in JSON at position 4
+20240514	00:07:11	5b0e0a88-387b-4373-86eb-0104acf498a5	TypeError: Cannot read properties of undefined (reading 'map')
