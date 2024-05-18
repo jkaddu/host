@@ -236,3 +236,5 @@
 20240515	09:34:52	fee43dbf-76d2-423d-b5f7-a1f002862e51	POST	undefined	/auth
 20240515	09:35:12	32cb8400-d027-4ed2-b430-e57d1d6dd6fe	PUT	undefined	/employees
 20240515	09:35:27	b51095b1-17b2-4573-9489-47a4e2b1a0f2	PUT	undefined	/employees
+20240518	10:30:46	853df00a-2b99-46ef-af7a-d49a67499036	POST	undefined	/register
+20240518	10:32:00	0b850d98-bdbf-427f-98a8-068120d369f1	POST	undefined	/register
