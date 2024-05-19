@@ -12,3 +12,11 @@
 20240511	11:41:32	ab68becc-c18b-4148-8b4d-922a343036b9	SyntaxError: Expected property name or '}' in JSON at position 4
 20240514	00:07:11	5b0e0a88-387b-4373-86eb-0104acf498a5	TypeError: Cannot read properties of undefined (reading 'map')
 20240518	20:28:10	65f44f3f-16eb-4566-994c-55ccab53bb5d	SyntaxError: Expected ',' or '}' after property value in JSON at position 20
+20240518	21:32:22	70d2ab9d-64ca-4d82-a36d-802a08029ee2	SyntaxError: Expected property name or '}' in JSON at position 4
+20240518	21:33:17	5e7cb94b-596f-4d97-b30d-00d0b3480582	SyntaxError: Expected property name or '}' in JSON at position 4
+20240518	21:45:07	e46776c9-bf43-4a9a-a009-907fcb6674ef	SyntaxError: Expected property name or '}' in JSON at position 4
+20240518	21:46:59	442f6338-bbb7-475d-8370-9b21ad34e790	SyntaxError: Unexpected token '}', ..."word":
+  
+}" is not valid JSON
+20240518	21:47:23	6f7c5a51-76b5-40d2-94d4-639e01adcfcb	SyntaxError: Expected double-quoted property name in JSON at position 60
+20240518	21:49:02	b4c7727f-d3f7-43a0-887c-4730d19e93f1	SyntaxError: Expected double-quoted property name in JSON at position 60

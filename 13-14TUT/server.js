@@ -45,6 +45,7 @@ app.use("/register", require("./routes/register"));
 app.use("/logout", require("./routes/logout"));
 
 app.use(verifyJWT);
+app.use("/users", require("./routes/api/users"));
 app.use("/employees", require("./routes/api/employees"));
 
 // Catch all for all for pages that don't exist
